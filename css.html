@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS---</title>
+</head>
+<body>
+	<header>
+		
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lobster">
+	
+		<style type="text/css">
+			:root {
+				--penguin-skin:pink;
+				--penguin-belly:gray;
+				--penguin-beak:orange;
+			} 
+
+			@media (max-width: 350px) {
+				:root {
+					--penguin-size: 200px;
+					--penguin-skin: black;
+			   }
+		    }
+
+            .penguin {
+            	--penguin-skin: gray;
+            }
+
+			#orange-text {
+				color: orange;
+			}
+			.magenta-text {
+				color: magenta !important;
+			}
+			.blue-text {
+				color: rgb(0, 0, 255);
+			}
+
+            body {
+            	background-color: var(--penguin-skin, black);
+            	color: black;
+            	font-family: monospace;
+            }
+           .dance-vid {
+            	height: 600px;
+            	width: 60%;
+            	margin: 50px 50px;
+            	float: right;
+            }	
+            
+
+			[type='checkbox'] {
+				margin: 10px 0px 15px 0px;
+			}
+			[type='radio'] {
+				margin: 20px;
+			}
+
+			#cat-photo-form {
+				background-color: green;
+			}
+            #heading {
+            	color: green;
+            }
+
+
+			.silver-background {
+				background-color: silver;
+			}
+			.thick-green-border 
+			{
+                border-color: green;
+                border-width: 10px;
+                border-style: solid;
+                border-radius: 40%;
+
+			}
+			.larger-image{
+				width: 500px;
+			}
+			.red-text {
+				color: #FF0000;
+              
+			}
+
+
+			p {
+				font-size: 16px;
+				font-family:  monospace;
+			}
+
+			h2{
+				font-family: Lobster, monospace;
+			}
+			.injected-text {
+				margin-bottom: -25px;
+				text-align: center;
+			}
+			.box {
+				border-style: solid;
+				border-color: black;
+				border-width: 5px;
+				text-align: center;
+			}
+			.yellow-box{
+				background-color: yellow;
+				padding: 10px;
+			}
+			.red-box{
+				background-color: crimson;
+				color: #fff;
+				padding-top: 40px;
+				padding-right: 20px;
+				padding-bottom: 20px;
+				padding-left: 40px;
+
+				padding: 1.5em;
+			}
+			.blue-box {
+				background-color: blue;
+				color: blue;
+				padding-top: 40px;
+				padding-left: 40px;
+				padding-right: 20px;
+				padding-bottom: 20px;
+
+				margin-top: 40px;
+				margin-right: 20px;
+				margin-bottom: 20px;
+				margin-left:40px; 
+			}
+		</style>
+	</header>
+	    <h1 class="magenta-text blue-text" id="orange-text" style="color: white">Hello Daddy!!!</h1>
+	    <h2 class="red-text" id="heading">CatPhotoApp</h2>
+	    <!-- This is an Inline styling-->
+    <main>
+    	<p class="red-text">Just trying out my styling on this paragraph </p>
+    	<a href="#"><img class="larger-image thick-green-border" src="https://i.ytimg.com/vi/zPCZWn_iWb0/maxresdefault.jpg" alt="A wicked looking cat screaming."></a>
+    	<p>Yet another paragraph should be styled as defined in the header</p>
+
+    	<div class="silver-background">
+    		<p>Things cats love:</p>
+    		<ul>
+    			<li>cat nip</li>
+    			<li>laser pointers</li>
+    			<li>lasagna</li>
+    		</ul>
+    		<p>Top 3 thing cats hate:</p>
+    		<ol>
+    			<li>flea treatment</li>
+    			<li>thunder</li>
+    			<li>other cats</li>
+    		</ol>
+    	</div>
+
+    	<form id="cat-photo-form" action="/submit-cat-photo">
+    		<label><input type="radio" name="indoor-outdoor" checked>Indoor</label>
+    		<label><input type="radio" name="indoor-outdoor"> Outdoor</label><br>
+    		<label><input type="checkbox" name="personality" checked>Loving</label>
+    		<label><input type="checkbox" name="personality">Lazy</label>
+    	</form>
+
+    	<h5 class="injected-text">margin</h5>
+    </main>
+</body>
+</html>
